@@ -19,6 +19,7 @@ bcrypt = Config.bcrypt
 
 
 
+
 # Register Blueprints
 app.register_blueprint(user_bp, url_prefix='/user')
 app.register_blueprint(diagnose_bp, url_prefix='/diagnose')
