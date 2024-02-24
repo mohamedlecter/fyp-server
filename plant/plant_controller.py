@@ -14,20 +14,15 @@ client = Config.client
 db = Config.db
 
 def get_plants():
-    plants =  db.db.plants.find()
+    plants = db.db.plants.find()
     plants_list = []
     for plant in plants:
         plants_list.append({
-            "id": str(plant['_id']),
-            "topic_questions": plant.get("topic_questions", ""),
-            "summary": plant.get("summary", ""),
-            "image": plant.get("image", ""),
-            "link_underline": plant.get("link-underline", ""),
-            "link": plant.get("link", ""),
+            'id': str(plant['_id']),
             "title": plant.get("title", ""),
             "description": plant.get("description", ""),
             "scientific_name": plant.get("scientific_name", ""),
-            "common_name": plant.get("common_name:", ""), 
+            "image": plant.get("image", ""),
             "uses": plant.get("uses", ""),
             "basic_requirements": plant.get("basic_requirements", ""),
             "growing": plant.get("growing", ""),
@@ -35,8 +30,7 @@ def get_plants():
             "harvesting": plant.get("harvesting", ""),
             "diseases": plant.get("diseases", [])
         })
-    return jsonify(plants_list)
-
+    return jsonify(plants_list), 200
 
 def get_plant_by_id(plant_id):
     plant = db.db.plants.find_one({"_id": ObjectId(plant_id)})
@@ -58,9 +52,43 @@ def get_plant_by_id(plant_id):
             "care": plant.get("care", ""),
             "harvesting": plant.get("harvesting", ""),
             "diseases": plant.get("diseases", [])
-        })
+        }), 200
     else:
         return jsonify({"error": "Plant not found"})
+    
+    
+from flask import jsonify
+
+def find_plant_by_disease(disease_name):
+    plants = db.db.plants.find()
+    found_plants = []
+    
+    for plant in plants:
+        matching_disease = None
+        other_diseases = []
+        for disease in plant.get("diseases", []):
+            if disease.get("name") == disease_name:
+                matching_disease = disease
+            else:
+                other_diseases.append(disease)
+        
+        if matching_disease or other_diseases:
+            found_plants.append({
+                'id': str(plant['_id']),
+                "title": plant.get("title", ""),
+                "description": plant.get("description", ""),
+                "scientific_name": plant.get("scientific_name", ""),
+                "image": plant.get("image", ""),
+                "uses": plant.get("uses", ""),
+                "basic_requirements": plant.get("basic_requirements", ""),
+                "growing": plant.get("growing", ""),
+                "care": plant.get("care", ""),
+                "harvesting": plant.get("harvesting", ""),
+                "matching_disease": matching_disease,
+                "other_diseases": other_diseases
+            })
+    return jsonify(found_plants), 200
+
 
 def upload_file(file_path):
     try:

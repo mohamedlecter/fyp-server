@@ -1,7 +1,7 @@
 # app/api/plant/routes/plant_routes.py
 import re
 from flask import Blueprint, jsonify
-from plant.plant_controller import get_plants, get_plant_by_id, upload_file
+from plant.plant_controller import get_plants, get_plant_by_id, upload_file,find_plant_by_disease
 import os
 
 
@@ -17,6 +17,9 @@ def plants():
 def plant_by_id(plant_id):
     return get_plant_by_id(plant_id)
 
+@plant_bp.route('/disease/<disease_name>', methods=['GET'])
+def plant_by_disease(disease_name):
+    return find_plant_by_disease(disease_name)
 
 @plant_bp.route('/upload_csv', methods=['POST'])
 def upload_csv():
