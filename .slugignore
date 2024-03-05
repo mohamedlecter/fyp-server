@@ -1,8 +1,8 @@
-/app/care
-/app/__init__.py
-/app/health_monitoring
-/app/.gitattribut
-/app/runtime.txt
-/app/settings
-/app/testData.json
-/app/data.json
+care
+__init__.py
+health_monitoring
+.gitattribut
+runtime.txt
+settings
+testData.json
+data.json
