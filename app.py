@@ -3,7 +3,7 @@ from flask import Flask, jsonify
 from flask_cors import CORS
 from config.config import Config
 from user.user_routes import user_bp
-# from diagnose.diagnose_routes import diagnose_bp
+from diagnose.diagnose_routes import diagnose_bp
 from plant.plant_routes import plant_bp
 from user_plants.user_plant_routes import user_plant_bp
 
@@ -20,7 +20,7 @@ bcrypt = Config.bcrypt
 
 # Register Blueprints
 app.register_blueprint(user_bp, url_prefix='/user')
-# app.register_blueprint(diagnose_bp, url_prefix='/diagnose')
+app.register_blueprint(diagnose_bp, url_prefix='/diagnose')
 app.register_blueprint(plant_bp, url_prefix='/plant')
 app.register_blueprint(user_plant_bp, url_prefix='/user_plant')
 
