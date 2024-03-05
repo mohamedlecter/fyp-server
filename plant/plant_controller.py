@@ -4,7 +4,6 @@ from bson import ObjectId
 from flask import Flask, request, jsonify
 import csv
 from config.config import Config
-import pandas as pd
 
 
 bcrypt = Config.bcrypt
