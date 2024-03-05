@@ -1,7 +1,0 @@
-/app/__init__.py
-/app/health_monitoring
-/app/.gitattributes
-/app/care
-/app/runtime.txt
-/app/testData.json
-/app/data.json

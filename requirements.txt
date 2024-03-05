@@ -4,4 +4,4 @@ Flask_Cors==4.0.0
 numpy==1.26.4
 pandas==2.0.3
 pymongo==4.6.1
-tensorflow
+tensorflow-cpu
