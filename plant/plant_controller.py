@@ -2,12 +2,10 @@ import json
 import os
 from bson import ObjectId
 from flask import Flask, request, jsonify
-from plant.plant_model import PlantModel
 import csv
 from config.config import Config
 import pandas as pd
 
-plant_model = PlantModel(api_key='sk-PFs2655e223d2d8613080')
 
 bcrypt = Config.bcrypt
 client = Config.client
@@ -15,6 +13,25 @@ db = Config.db
 
 def get_plants():
     plants = db.db.plants.find()
+    plants_list = []
+    for plant in plants:
+        plants_list.append({
+            'id': str(plant['_id']),
+            "title": plant.get("title", ""),
+            "description": plant.get("description", ""),
+            "scientific_name": plant.get("scientific_name", ""),
+            "image": plant.get("image", ""),
+            "uses": plant.get("uses", ""),
+            "basic_requirements": plant.get("basic_requirements", ""),
+            "growing": plant.get("growing", ""),
+            "care": plant.get("care", ""),
+            "harvesting": plant.get("harvesting", ""),
+            "diseases": plant.get("diseases", [])
+        })
+    return jsonify(plants_list), 200
+
+def get_random_plants():
+    plants = db.db.plants.aggregate([{ '$sample': { 'size': 10 } }])
     plants_list = []
     for plant in plants:
         plants_list.append({
@@ -56,8 +73,25 @@ def get_plant_by_id(plant_id):
     else:
         return jsonify({"error": "Plant not found"})
     
+def search_plants_by_name(plant_name):
+    plants = db.db.plants.find({"title": {"$regex": plant_name, "$options": "i"}})
+    plants_list = []
+    for plant in plants:
+        plants_list.append({
+            'id': str(plant['_id']),
+            "title": plant.get("title", ""),
+            "description": plant.get("description", ""),
+            "scientific_name": plant.get("scientific_name", ""),
+            "image": plant.get("image", ""),
+            "uses": plant.get("uses", ""),
+            "basic_requirements": plant.get("basic_requirements", ""),
+            "growing": plant.get("growing", ""),
+            "care": plant.get("care", ""),
+            "harvesting": plant.get("harvesting", ""),
+            "diseases": plant.get("diseases", [])
+        })
+    return jsonify(plants_list), 200
     
-from flask import jsonify
 
 def find_plant_by_disease(disease_name):
     plants = db.db.plants.find()

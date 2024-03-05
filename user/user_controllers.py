@@ -24,6 +24,8 @@ def register_user():
 
     return jsonify({'message': 'Registration successful'}), 201
 
+from bson import json_util
+
 def login_user():
     email = request.json.get('email')
     password = request.json.get('password')
@@ -34,35 +36,60 @@ def login_user():
     user = db.db.users.find_one({'email': email})
 
     if user and bcrypt.check_password_hash(user['password'], password):
-        # You can implement token-based authentication here
-        return jsonify({'message': 'Login successful'}), 200
+        # Convert ObjectId to string
+        user['_id'] = str(user['_id'])
+
+        # Remove the password field for security reasons
+        user.pop('password', None)
+
+        # Convert ObjectId to string in nested documents
+        for plant in user.get('plants', []):
+            plant['_id'] = str(plant.get('_id'))
+
+        # Return the entire user object upon successful login
+        return jsonify({'message': 'Login successful', 'user': user}), 200
     else:
         return jsonify({'error': 'Invalid credentials'}), 401
+
+
 
 def get_all_users():
     users = db.db.users.find()
     user_list = []
     for user in users:
-        user_list.append({
-            'username': user['username'],
-            'email': user['email'],
-            'id': str(user['_id'])
-        })
-    return jsonify(user_list), 200
+        # Convert ObjectId to string
+        user['_id'] = str(user['_id'])
+        
+        # Remove the password field for security reasons
+        user.pop('password', None)
+
+        # Convert ObjectId to string in nested documents
+        for plant in user.get('plants', []):
+            plant['_id'] = str(plant.get('_id'))
+
+        user_list.append(user)
+    return jsonify({'users': user_list}), 200
+
 
 def get_user_by_id(user_id):
     # Convert the user_id string to ObjectId
     user_id = ObjectId(user_id)
     user = db.db.users.find_one({'_id': user_id})
     if user:
-        return jsonify({
-            'username': user['username'],
-            'email': user['email'],
-            'id': str(user['_id'])
-        }), 200
+        # Convert ObjectId to string
+        user['_id'] = str(user['_id'])
+
+        # Remove the password field for security reasons
+        user.pop('password', None)
+
+        # Convert ObjectId to string in nested documents
+        for plant in user.get('plants', []):
+            plant['_id'] = str(plant.get('_id'))
+
+        return jsonify(user), 200
     else:
         return jsonify({'error': 'User not found'}), 404
-    
+
 def delete_user_by_id(user_id):
     # Convert the user_id string to ObjectId
     user_id = ObjectId(user_id)
