@@ -3,7 +3,7 @@ import json
 import os
 
 class PlantDiseaseModel:
-    def __init__(self, model_path='../model/models/plant_disease_detector', class_names_path='../model/class_names.json'):
+    def __init__(self, model_path='./plant_disease_detector.h5', class_names_path='./class_names.json'):
         # Get the absolute paths of the model and class names files
         model_path = os.path.abspath(model_path)
         class_names_path = os.path.abspath(class_names_path)
