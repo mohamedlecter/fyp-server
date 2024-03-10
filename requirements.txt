@@ -1,8 +1,4 @@
 Flask==2.2.2
 Flask_Bcrypt==1.0.1
 Flask_Cors==4.0.0
-numpy==1.26.4
 pymongo==4.6.1
-gunicorn==21.2.0
-tensorflow==2.15.0
-Werkzeug==2.2.2
