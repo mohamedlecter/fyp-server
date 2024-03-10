@@ -1,6 +1,6 @@
 import re
 from flask import Blueprint, jsonify
-from plant.plant_controller import get_plants, get_plant_by_id, upload_file,find_plant_by_disease, get_random_plants, search_plants_by_name
+from plant.plant_controller import get_plants, get_plant_by_id, upload_file,find_plant_by_disease, get_random_plants, search_plants_by_name, get_user_plants
 import os
 
 
@@ -19,6 +19,10 @@ def plant_by_id(plant_id):
 @plant_bp.route('/random', methods=['GET'])
 def random_plants():
     return get_random_plants() 
+
+@plant_bp.route('/user/<user_id>', methods=['GET'])
+def user_plants(user_id):
+    return get_user_plants(user_id)
 
 @plant_bp.route('/search/<plant_name>', methods=['GET'])
 def search_plants(plant_name):

@@ -142,3 +142,29 @@ def upload_file(file_path):
         return jsonify({'error': 'JSON decode error. The file might be empty or not in valid JSON format.'})
     except Exception as e:
         return jsonify({'error': str(e)})
+    
+def get_user_plants(user_id):
+    user = db.db.users.find_one({"_id": ObjectId(user_id)})
+
+    if user:
+        user_plants = user.get("plants", [])
+
+        plants_list = []
+        for plant in user_plants:
+            plants_list.append({
+                'id': str(plant['_id']),
+                "title": plant.get("title", ""),
+                "description": plant.get("description", ""),
+                "scientific_name": plant.get("scientific_name", ""),
+                "image": plant.get("image", ""),
+                "uses": plant.get("uses", ""),
+                "basic_requirements": plant.get("basic_requirements", ""),
+                "growing": plant.get("growing", ""),
+                "care": plant.get("care", ""),
+                "harvesting": plant.get("harvesting", ""),
+                "diseases": plant.get("diseases", [])
+            })
+
+        return jsonify(plants_list), 200
+    else:
+        return jsonify({"error": "User not found"}), 404
