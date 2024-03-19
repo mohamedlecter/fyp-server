@@ -1,10 +1,10 @@
 import re
 from flask import Blueprint, jsonify
-from plant.plant_controller import get_plants, get_plant_by_id, upload_file,find_plant_by_disease, get_random_plants, search_plants_by_name, get_user_plants
+from plant.plant_controller import get_plants, get_plant_by_id, upload_file,find_plant_by_disease, get_random_plants, search_plants_by_name, get_user_plants, get_user_plant, add_care_reminder
 import os
 
 
-file = os.path.abspath("server\data.json")
+file = os.path.abspath("data.json")
 
 plant_bp = Blueprint("plant", __name__)
 
@@ -24,9 +24,17 @@ def random_plants():
 def user_plants(user_id):
     return get_user_plants(user_id)
 
+@plant_bp.route('/user/<user_id>/<plant_id>', methods=['GET'])
+def user_plant_by_id(user_id, plant_id):
+    return get_user_plant(user_id, plant_id)
+
 @plant_bp.route('/search/<plant_name>', methods=['GET'])
 def search_plants(plant_name):
     return search_plants_by_name(plant_name)
+
+@plant_bp.route('/user/<user_id>/<plant_id>/care_reminders', methods=['POST'])
+def add_reminder(user_id, plant_id):
+    return add_care_reminder(user_id, plant_id)
 
 @plant_bp.route('/disease/<disease_name>', methods=['GET'])
 def plant_by_disease(disease_name):
