@@ -1,8 +1,7 @@
-import re
-from flask import Blueprint, jsonify
-from plant.plant_controller import get_plants, get_plant_by_id, upload_file,find_plant_by_disease, get_random_plants, search_plants_by_name, get_user_plants, get_user_plant, add_care_reminder
 import os
-
+from flask import Blueprint, jsonify
+from plant.plant_controller import get_plants, get_plant_by_id, upload_file, find_plant_by_disease, get_random_plants, search_plants_by_name, get_user_plants, get_user_plant, add_care_reminder, get_user_reminder_dates
+from bson import ObjectId
 
 file = os.path.abspath("data.json")
 
@@ -36,6 +35,10 @@ def search_plants(plant_name):
 def add_reminder(user_id, plant_id):
     return add_care_reminder(user_id, plant_id)
 
+@plant_bp.route('/user/<user_id>/reminder_dates', methods=['GET'])
+def get_reminder_dates(user_id):
+    return get_user_reminder_dates(user_id)
+
 @plant_bp.route('/disease/<disease_name>', methods=['GET'])
 def plant_by_disease(disease_name):
     return find_plant_by_disease(disease_name)
@@ -43,4 +46,3 @@ def plant_by_disease(disease_name):
 @plant_bp.route('/upload_csv', methods=['POST'])
 def upload_csv():
     return upload_file(file)
-

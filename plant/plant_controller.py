@@ -167,7 +167,9 @@ def get_user_plants(user_id):
                 "growing": plant.get("growing", ""),
                 "care": plant.get("care", ""),
                 "harvesting": plant.get("harvesting", ""),
-                "diseases": plant.get("diseases", [])
+                "diseases": plant.get("diseases", []),
+                "care_reminders": plant.get("care_reminders", [])
+                
             })
 
         return jsonify(plants_list), 200
@@ -229,3 +231,21 @@ def add_care_reminder(user_id, plant_id):
         # Log the error
         print(f"Error in add_care_reminder: {e}")
         return jsonify({"error": str(e)}), 500
+    
+def get_user_reminder_dates(user_id):
+    user = db.db.users.find_one({"_id": ObjectId(user_id)})
+    if user:
+        reminder_dates = {}
+        for plant in user.get("plants", []):
+            plant_id = str(plant["_id"])
+            reminders = [{"action": reminder["action"], "time": reminder["time"]} for reminder in plant.get("care_reminders", []) if isinstance(reminder, dict)]
+            for reminder in reminders:
+                if plant_id not in reminder_dates:
+                    reminder_dates[plant_id] = {"plant_id": plant_id, "title": plant.get("title", ""),"image": plant.get("image", ""),"actions": [reminder]}
+                else:
+                    reminder_dates[plant_id]["actions"].append(reminder)
+        return jsonify({"reminder_dates": list(reminder_dates.values())}), 200
+    else:
+        return jsonify({"error": "User not found"}), 404
+
+
