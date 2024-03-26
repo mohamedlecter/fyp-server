@@ -1,7 +1,8 @@
 import os
 from flask import Blueprint, jsonify
-from plant.plant_controller import get_plants, get_plant_by_id, upload_file, find_plant_by_disease, get_random_plants, search_plants_by_name, get_user_plants, get_user_plant, add_care_reminder, get_user_reminder_dates
+from plant.plant_controller import get_plants, get_plant_by_id, upload_file, find_plant_by_disease, get_random_plants, search_plants_by_name, get_user_plants, get_user_plant, add_care_reminder, get_user_reminder_dates, get_user_reminder_dates_by_date
 from bson import ObjectId
+from datetime import datetime
 
 file = os.path.abspath("data.json")
 
@@ -38,6 +39,14 @@ def add_reminder(user_id, plant_id):
 @plant_bp.route('/user/<user_id>/reminder_dates', methods=['GET'])
 def get_reminder_dates(user_id):
     return get_user_reminder_dates(user_id)
+
+@plant_bp.route('/user/<user_id>/reminder_dates/<date>', methods=['GET'])
+def get_reminder_dates_by_date(user_id, date):
+    try:
+        return get_user_reminder_dates_by_date(user_id, date)
+    except ValueError:
+        return jsonify({"error": "Invalid date format. Please use YYYY-MM-DD."}), 400
+
 
 @plant_bp.route('/disease/<disease_name>', methods=['GET'])
 def plant_by_disease(disease_name):

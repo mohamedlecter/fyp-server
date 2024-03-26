@@ -5,6 +5,7 @@ from flask import Flask, request, jsonify
 import csv
 from config.config import Config
 import re
+from datetime import datetime
 
 bcrypt = Config.bcrypt
 client = Config.client
@@ -203,7 +204,7 @@ def get_user_plant(user_id, plant_id):
             return jsonify({"error": "Plant not found for the user"}), 404
     else:
         return jsonify({"error": "User not found"}), 404
-
+    
 def add_care_reminder(user_id, plant_id):
     # Extract care reminder data from request body
     reminder_data = request.json
@@ -217,15 +218,13 @@ def add_care_reminder(user_id, plant_id):
             # Add the care reminder to the plant's care_reminders array
             db.db.users.update_one(
                 {"_id": ObjectId(user_id), "plants._id": ObjectId(plant_id)},
-                {"$push": {"plants.$.care_reminders": {"action": action, "time": time}}},
-            )
+                {"$push": {"plants.$.care_reminders": {"action": action, "time": time, "completed": False}}},            )
             return jsonify({"success": True, "message": "Care reminder added successfully"}), 200
         else:
             # Add the plant and then add the care reminder
             db.db.users.update_one(
                 {"_id": ObjectId(user_id)},
-                {"$push": {"plants": {"_id": ObjectId(plant_id), "care_reminders": [{"action": action, "time": time}]}}},
-            )
+                {"$push": {"plants": {"_id": ObjectId(plant_id), "care_reminders": [{"action": action, "time": time, "completed": False}]}}},            )
             return jsonify({"success": True, "message": "Plant and care reminder added successfully"}), 200
     except Exception as e:
         # Log the error
@@ -248,4 +247,35 @@ def get_user_reminder_dates(user_id):
     else:
         return jsonify({"error": "User not found"}), 404
 
+def get_user_reminder_dates_by_date(user_id, date_str):
+    try:
+        # Convert date string to datetime object
+        date = datetime.strptime(date_str, "%Y-%m-%d").date()
+        
+        user = db.db.users.find_one({"_id": ObjectId(user_id)})
+        if user:
+            reminder_dates = {}
+            for plant in user.get("plants", []):
+                plant_id = str(plant["_id"])
+                reminders = [{"action": reminder["action"], "time": reminder["time"]} for reminder in plant.get("care_reminders", []) if isinstance(reminder, dict)]
+                for reminder in reminders:
+                    # Ensure reminder["time"] is a string before parsing
+                    reminder_time_str = str(reminder["time"])
+                    # Extract date from reminder's time as string
+                    reminder_date = datetime.strptime(reminder_time_str[:10], "%Y-%m-%d").date()
+                    # Convert date to string for comparison
+                    reminder_date_str = reminder_date.strftime("%Y-%m-%d")
+                    # Compare only the date part
+                    if reminder_date_str == date_str:
+                        if plant_id not in reminder_dates:
+                            reminder_dates[plant_id] = {"plant_id": plant_id, "title": plant.get("title", ""),"image": plant.get("image", ""),"actions": [reminder]}
+                        else:
+                            reminder_dates[plant_id]["actions"].append(reminder)
+            return jsonify({"reminder_dates": list(reminder_dates.values())}), 200
+        else:
+            return jsonify({"error": "User not found"}), 404
+    except Exception as e:
+        # Log the error
+        print(f"Error in get_user_reminder_dates_by_date: {e}")
+        return jsonify({"error": str(e)}), 500
 
