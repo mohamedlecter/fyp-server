@@ -1,6 +1,12 @@
 import os
-from flask import Blueprint, jsonify
-from plant.plant_controller import get_plants, get_plant_by_id, upload_file, find_plant_by_disease, get_random_plants, search_plants_by_name, get_user_plants, get_user_plant, add_care_reminder, get_user_reminder_dates, get_user_reminder_dates_by_date
+from flask import Blueprint, jsonify, request
+from plant.plant_controller import (get_plants, get_plant_by_id, upload_file, 
+                                    find_plant_by_disease, get_random_plants, 
+                                    search_plants_by_name, get_user_plants, 
+                                    get_user_plant, add_care_reminder, 
+                                    get_user_reminder_dates, 
+                                    get_user_reminder_dates_by_date, 
+                                    update_reminder_completion) 
 from bson import ObjectId
 from datetime import datetime
 
@@ -46,6 +52,15 @@ def get_reminder_dates_by_date(user_id, date):
         return get_user_reminder_dates_by_date(user_id, date)
     except ValueError:
         return jsonify({"error": "Invalid date format. Please use YYYY-MM-DD."}), 400
+
+@plant_bp.route('/user/<user_id>/plant/<plant_id>/care_reminders/<action>', methods=['PUT'])
+def update_reminder_completion_status(user_id, plant_id, action):
+    data = request.get_json()
+    if 'completed' in data:
+        completed = data['completed']
+        return update_reminder_completion(user_id, plant_id, action, completed)
+    else:
+        return jsonify({"error": "Incomplete request data. 'completed' field is required."}), 400
 
 
 @plant_bp.route('/disease/<disease_name>', methods=['GET'])

@@ -197,7 +197,8 @@ def get_user_plant(user_id, plant_id):
                 "care": plant.get("care", ""),
                 "harvesting": plant.get("harvesting", ""),
                 "diseases": plant.get("diseases", []),
-                "care_reminders": plant.get("care_reminders", [])
+                "care_reminders": plant.get("care_reminders", []),
+                "completed": plant.get("completed", False),
                 
             }), 200
         else:
@@ -257,7 +258,7 @@ def get_user_reminder_dates_by_date(user_id, date_str):
             reminder_dates = {}
             for plant in user.get("plants", []):
                 plant_id = str(plant["_id"])
-                reminders = [{"action": reminder["action"], "time": reminder["time"]} for reminder in plant.get("care_reminders", []) if isinstance(reminder, dict)]
+                reminders = [{"action": reminder["action"], "time": reminder["time"], "completed": reminder.get("completed", False)} for reminder in plant.get("care_reminders", []) if isinstance(reminder, dict)]
                 for reminder in reminders:
                     # Ensure reminder["time"] is a string before parsing
                     reminder_time_str = str(reminder["time"])
@@ -279,3 +280,17 @@ def get_user_reminder_dates_by_date(user_id, date_str):
         print(f"Error in get_user_reminder_dates_by_date: {e}")
         return jsonify({"error": str(e)}), 500
 
+
+def update_reminder_completion(user_id, plant_id, action, completed):
+    user = db.db.users.find_one({"_id": ObjectId(user_id)})
+    if user:
+        for plant in user.get("plants", []):
+            if str(plant["_id"]) == plant_id:
+                for reminder in plant.get("care_reminders", []):
+                    if reminder.get("action") == action:
+                        reminder["completed"] = completed
+                        db.db.users.update_one({"_id": ObjectId(user_id)}, {"$set": {"plants.$[p].care_reminders": plant["care_reminders"]}}, array_filters=[{"p._id": plant["_id"]}])
+                        return jsonify({"message": "Reminder completion status updated successfully"}), 200
+        return jsonify({"error": "Plant or reminder not found for the user"}), 404
+    else:
+        return jsonify({"error": "User not found"}), 404
