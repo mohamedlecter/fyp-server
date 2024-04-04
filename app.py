@@ -6,6 +6,7 @@ from user.user_routes import user_bp
 # from diagnose.diagnose_routes import diagnose_bp
 from plant.plant_routes import plant_bp
 from user_plants.user_plant_routes import user_plant_bp
+from chatbot.chatbot_routes import chatbot_bp
 
 app = Flask(__name__)
 CORS(app)
@@ -23,6 +24,7 @@ app.register_blueprint(user_bp, url_prefix='/user')
 # app.register_blueprint(diagnose_bp, url_prefix='/diagnose')
 app.register_blueprint(plant_bp, url_prefix='/plant')
 app.register_blueprint(user_plant_bp, url_prefix='/user_plant')
+app.register_blueprint(chatbot_bp, url_prefix='/chatbot')
 
 @app.route('/')
 def index():
