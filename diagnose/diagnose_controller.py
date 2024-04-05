@@ -38,12 +38,9 @@
 #         # confidence = np.max(predictions)
 #         predicted_class_index = np.argmax(predictions)
 #         predicted_class = model.get_class_name(predicted_class_index)
-
-#         # Return the result
-#         result = {
-#             'disease': predicted_class,
-#             # 'confidence': confidence
-#         }
+#         confidence_score = predictions[0][predicted_class_index]
+        
+#         result = {'class': predicted_class, 'confidence': float(confidence_score)}
 
 #         # Clean up temporary file
 #         os.remove(image_path)
