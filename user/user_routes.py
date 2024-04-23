@@ -1,4 +1,3 @@
-# app/api/user/routes/user_routes.py
 from flask import Blueprint
 from user.user_controllers import register_user, login_user, get_all_users, get_user_by_id, delete_user_by_id, update_user_by_id
 

@@ -71,7 +71,7 @@ def get_plant_by_id(plant_id):
             "diseases": plant.get("diseases", [])
         }), 200
     else:
-        return jsonify({"error": "Plant not found"})
+        return jsonify({"error": "Plant not found"}), 404
     
 def search_plants_by_name(plant_name):
     plants = db.db.plants.find({"title": {"$regex": plant_name, "$options": "i"}})

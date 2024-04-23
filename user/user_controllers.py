@@ -2,6 +2,7 @@ from flask import request, jsonify
 from user.user_model import User
 from config.config import Config
 from bson import ObjectId
+from bson import json_util
 
 bcrypt = Config.bcrypt
 client = Config.client
@@ -15,16 +16,15 @@ def register_user():
     if not username or not password:
         return jsonify({'error': 'Username and password are required'}), 400
 
-    existing_user = db.db.users.find_one({'username': username})
+    existing_user = db.db.users.find_one({'email': email})
     if existing_user:
-        return jsonify({'error': 'Username already exists'}), 400
+        return jsonify({'error': 'Email already exists'}), 400
 
     new_user = User(username, password, email)
     db.db.users.insert_one({'username': new_user.username, 'password': new_user.password, 'email': new_user.email})
 
     return jsonify({'message': 'Registration successful'}), 201
 
-from bson import json_util
 
 def login_user():
     email = request.json.get('email')
