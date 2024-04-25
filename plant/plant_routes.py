@@ -7,10 +7,8 @@ from plant.plant_controller import (get_plants, get_plant_by_id, upload_file,
                                     get_user_reminder_dates, 
                                     get_user_reminder_dates_by_date, 
                                     update_reminder_completion) 
-from bson import ObjectId
-from datetime import datetime
 
-file = os.path.abspath("data.json")
+file = os.path.abspath("plants.json")
 
 plant_bp = Blueprint("plant", __name__)
 

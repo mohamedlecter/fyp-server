@@ -2,7 +2,7 @@ from pymongo import MongoClient
 from flask_bcrypt import Bcrypt
 
 class Config:
-    MONGODB_CONNECTION_STRING = 'mongodb+srv://admin:admin@fyp.sabqf4f.mongodb.net/?retryWrites=true&w=majority'
+    MONGODB_CONNECTION_STRING = 'mongodb+srv://admin:admin@cluster0.xkuprjf.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
     client = MongoClient(MONGODB_CONNECTION_STRING)
-    db = client.get_database('fyp')
+    db = client.get_database('final-year-project')
     bcrypt = Bcrypt()

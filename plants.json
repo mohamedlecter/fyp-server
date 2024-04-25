@@ -1,0 +1,351 @@
+[
+    {
+        "image": "https://plantvillage-production-new.s3.amazonaws.com/image/2555/file/medium-2af8d7e43adbcf45cb7356141e38c94a.jpg",
+        "title": "Apple",
+        "description":"An apple is a deciduous tree grown for its fruits, known as apples. Apple fruits are one of the most widely cultivated fruits in the world. They are round (pome) in shape and range in color from green to red. The domestic apple tree is believed to have originated from Western Asia and the Mediterranean, having several wild ancestors. China is the largest producer of apples worldwide. Apple farming can be profitable and rewarding for farmers with suitable land, climate, and markets.",
+        "scientific_name": "Malus domestica",
+        "common_name:": "Apple tree (En)",
+        "uses":"Apples are most commonly eaten fresh but can also be used for baking and cooking. They can be processed into applesauce, cider, vinegar, juice, or butter. Slices can be dried for later consumption. Apples can also be used for the extraction of useful compounds such as fructose and pectin. Apples are rich in fiber, Vitamin C, minerals, and antioxidants. Apples are a great source of soluble fiber, which can help reduce intestinal disorders. They also aid in controlling insulin levels by slowly releasing sugar into the bloodstream. Additionally, apples can lower cholesterol levels and reduce the risk of respiratory diseases. They are also known for their ability to detoxify and cleanse the body. Furthermore, apples have been traditionally used to treat conditions such as fever, dysentery, diarrhea, and constipation.",
+        "basic_requirements": "Apple trees grow best in the tropics and at higher latitudes. They require a mild growing season and a cold winter to break their dormancy. In these latitudes, the tree will flower in spring and the fruit will ripen in the fall. In the tropics, the leaves will remain on the tree longer, making it essentially evergreen, and flowering and fruiting will happen sporadically throughout the year unless the tree manages to enforce a uniform cycle across the entire tree by bending shoots to create a wide tree. Apple trees require fertile, well-drained, and well-aerated loamy-sandy soil, with a slightly acidic to alkaline pH of 5.5-6.5. You must test your soil before planting and amend it with organic matter, lime, or sulfur if necessary. Apples require a lot of moisture during the flowering and fruiting stage. Therefore, if you are growing apples in hotter regions, you will need to irrigate your trees. However, keep in mind that excess water around the root zone will encourage disease outbreaks and result in low crop yield. The best method of irrigating apples is through drip irrigation.",
+        "growing": "When planted from a seed, an apple tree can take six to ten years to mature and produce fruit of its own. Apple trees are small to medium-sized, reaching heights of 5–10 m (16.4–32.8 ft), with a central trunk that divides into several branches. The leaves of the tree are oval in shape and can reach up to 13 cm (5.1 in) in length and 7 cm (2.8 in) in width. The standard method of propagating apple trees is by budding. When planting an apple nursery or orchard, it is highly advisable to plant seedlings budded from rootstock to prevent an increase in bud dormancy. Budded trees should be pruned in the first year to encourage new shoot growth. ",
+        "care": "In the tropics, apple trees require careful management to make heavy crop loads sustainable. This includes bending shoots, pruning the tips, and defoliating the trees. Flowers are also removed to promote growth until the first fruit production, generally after 2 years.",
+        "harvesting": "An apple is ready for picking when its background skin color turns from green to yellow. The fruit comes off easily when harvested. Harvesting apples at the right time is key, not only to obtain the highest quality fruit but also to maximize the storage life. Maturation time is dependent on weather conditions during the growing season. Early maturing apples are harvested in August-September. There are several reasons why proper picking technique is important. First, simply pulling apples from the tree with force is likely to bruise the fruit and remove the stems. Apples without stems do not store as well as apples with stems. Second, it is easy to identify apples that have been picked incorrectly. They will have noticeable fingerprint bruises. Make sure to palm instead of grab when picking. Yanking tends to remove spurs from the tree. These fruit spurs represent next year's crop, so by pulling them off, there will be fewer apples to harvest next year. In addition to not pulling the apples from the tree, there are some other actions that are important to avoid. Apples that have touched the ground are a potential source of contamination. Never mix apples from the ground with picked apples. Apples that are decaying or rotten should be dropped on the ground and never placed in your bin. Do not throw or drop apples into your bucket, as this will certainly cause bruising. And always avoid squeezing the fruit when picking.",
+        "diseases": [
+          {
+            "category": "Fungal",
+            "name": "Apple__scab",
+            "symptoms": "Yellow or chlorotic spots on leaves; dark olive green spots on leaves and fruit; may be a velvety growth on spots on undersides of leaves; twisting of leaves; distorted leaves; severely infected leaves turn yellow and drop from tree.",
+            "cause": "Fungus",
+            "comments": "Fungus overwinters on dead foliage on ground; spores dispersed by wind; high moisture encourages fungal growth.",
+            "treatment": "Remove all leaves dropped from tree in the fall and compost to prevent any diseases surviving in debris; application of zinc and fertilizer grade urea in the Fall may be necessary to speed leaf drop, lime should then be added to fallen leaves; fungicide application may be necessary in areas where leaves remain wet for periods in excess of 9 hours; fungicides such as copper soaps and Bordeaux mixture should be applied if there is a chance of wet period as soon as leaf tips emerge."
+          },
+          {
+            "category": "Fungal",
+            "name": "Apple__black_rot",
+            "symptoms": "Purple flecks or circular lesions which are brown in the centre and purple at margin; red flecks, purple lesions and/or brown black rings on fruit.",
+            "cause": "Fungus",
+            "comments": "Spores can overwinter in twigs or fruit remaining on the tree and spread during rainfall.",
+            "treatment": "Remove dead wood, mummified fruit and cankers from trees to reduce spread of disease; burn any prunings that have been made from the tree; disease can be controlled by applying fungicides from silver tip to harvest."
+          },
+          {
+            "category": "Fungal",
+            "name": "Apple__rust",
+            "symptoms": "Bright orange or yellow patches on top side of leaves surrounded by a red band and small black spots in the center; by mid-summer, cup-like structures called aecia form on the leaf undersides; these become covered in tubular structures from which spores are released.",
+            "cause": "Fungus",
+            "comments": "Fungus requires two hosts to complete lifecycle; forms galls on Eastern red cedar and spores are carried by wind to apple; use caution when planting apple close to red cedar.",
+            "treatment":" Plant resistant varieties where possible; remove nearby red cedar; if growing susceptible varieties in proximity to red cedar follow a fungicide program."
+          }
+        ]
+    },
+    {
+      "image": "https://plantvillage-production-new.s3.amazonaws.com/image/6375/file/default-987c49f0f89e47952294a7cd3eaef14a.jpg",
+      "title": "Cassava",
+      "description":"Cassava is a perennial woody shrub grown for its large, starchy, tuberous roots. Cassava is a major staple food in the developing world, providing a basic diet for over half a billion people. It is one of the most drought-tolerant crops, capable of growing on marginal soils. Nigeria is the world's largest producer of cassava. Cassava is a major source of carbohydrates in tropical regions. The roots are rich in starch and contain small amounts of calcium (16 mg/100 g), phosphorus (27 mg/100 g), and vitamin C (20.6 mg/100 g). Cassava roots are processed into a variety of products such as flour, starch, and chips. The leaves are also edible and are a good source of protein, vitamins, and minerals.",
+      "scientific_name": "Manihot esculenta",
+      "common_name:": "cassava (En)",
+      "basic_requirements": "Cassava grows best in tropical and subtropical regions. It requires a warm, humid climate with temperatures between 25-29°C (77-84°F). Cassava grows best in well-drained, sandy loam soils with a pH of 5.5-6.5. The plant is drought-tolerant and can grow in poor soils with low fertility. Cassava is sensitive to frost and cannot tolerate temperatures below 10°C (50°F).",
+      "care": "Cassava is propagated by stem cuttings. The cuttings should be 20-30 cm (8-12 in) long and taken from healthy, disease-free plants. The cuttings should be planted in rows with a spacing of 1 m (3.3 ft) between plants and 1.5 m (5 ft) between rows. Cassava requires regular watering during the growing season. The plant should be fertilized with nitrogen, phosphorus, and potassium to promote growth and yield. Cassava is susceptible to pests and diseases such as mealybugs, spider mites, and cassava mosaic virus. The plant should be monitored regularly for signs of infestation and treated with appropriate pesticides.",
+      "uses":  "Cassava is a major source of carbohydrates in tropical regions. The roots are rich in starch and contain small amounts of calcium (16 mg/100 g), phosphorus (27 mg/100 g), and vitamin C (20.6 mg/100 g). Cassava roots are processed into a variety of products such as flour, starch, and chips. The leaves are also edible and are a good source of protein, vitamins, and minerals.",
+      "harvesting": "Cassava roots are ready for harvesting 8-12 months after planting. The roots should be harvested when they are mature and the leaves start to turn yellow. The roots should be dug out carefully to avoid damage. The roots should be washed and dried in the sun for 2-3 days. The roots can be stored in a cool, dry place for up to 3 months. Cassava leaves can be harvested throughout the growing season and used as a vegetable.",
+      "diseases": [
+        {
+          "category": "Bacterial",
+          "name": "Cassava__bacterial_blight",
+          "symptoms": "Water-soaked lesions on leaves; leaf drop; reduced yield.",
+          "cause": "Bacteria",
+          "comments": "Spread by rain splash; no cure for the disease; plant resistant varieties.",
+          "treatment": "Plant resistant varieties; prune infected leaves; apply copper-based fungicides."
+        },
+        {
+          "category": "Fungal",
+          "name": "Cassava__brown_streak_disease",
+          "symptoms": "Brown spots on leaves; leaf drop; reduced yield.",
+          "cause": "Fungus",
+          "comments": "Disease emergence favored by high temperature and humidity",
+          "treatment": "Remove leaves and crop debris from around plants to prevent disease spreading; remove weeds from around crop"
+        },
+        {
+          "category": "Mites",
+          "name": "Cassava__green_mottle",
+          "symptoms": "Yellow stipping of leaves; chlorotic spots on leaves; chlorosis of entire leaves; if infestation is very high then leaves may be stunted and deformed; terminal leaves may die and drop from plant; pest responsible is a tiny green mite",
+          "cause": "Arachnid",
+          "comments": "SGreen spider mites are very common pests in most African growing regions and become problematic during the dry season; can cause significant tuber losses",
+          "treatment": "lant tolerant cassava varieties where possible; plant at the beginning of the rainy season to encourage vigorous growth which allows plant to tolerate attack; intercropping with crops such as cowpea may reduce damage; introductions of the predatory mite Typhlodromalus aripo have been very successful at controlling the green spider mite in many regions of Africa"
+        },
+        {
+          "category": "Bacterial",
+          "name": "Cassava__mosaic_disease",
+          "symptoms": "Discolored pale green, yellow or white mottled leaves which may be distorted with a reduced size; in highly susceptible cassava cultivars plant growth may be stunted, resulting in poor root yield and low quality stem cuttings. Note that infected plants can express a range of symptoms and the exact symptoms depend on the species of virus and the strain as well as the environmental conditions and and the sensitivity of the cassava host.",
+          "cause": "Virus",
+          "comments": "Disease is spread by infected cuttings and by whiteflies. The leaves are yellow, mottled and distorted. If leaves are yellow all over but are a normal size or there brown leaves that that does not indicate disease. Wild cassava (kisamvu cha mpira in Kiswahili) also hosts the disease. The disease was first observed in the late 19th Century in what is now Tanzania. It was not until work in 1938 that the disease transmission was confirmed to occur via grafting as well as vectored by the White fly.",
+          "treatment": "Varieties of cassava resistant to the virus are available in many countries, most traditional varieties of cassava grown in Africa are susceptible to the virus, seek advice from an agricultural extension on suitable varieties for your region (see below). Do not plant cuttings from plants with symptoms of disease; inspect plants regularly for symptoms of disease and remove and destroy any showing symptoms. Infected plants should be uprooted ('rouged'). Replace with disease resistant varieties such as 'Rwizihiza', 'Ndamirabana', 'Cyizere', 'Seruruseke', 'Mavoka', 'Garukunsubire' and 'Mbakungahaze'. There is no agrochemical agent or organic treatment for this disease. There are both control strategies for the whitefly vector."
+        }
+      ]
+    },
+    {
+     "image": "https://plantvillage-production-new.s3.amazonaws.com/image/2330/file/default-fc30c64c4d1065127d2c62cec3045a16.jpg",
+      "title": "Corn", 
+      "description":"Corn (Maize) is a staple food for almost half the population of sub-Saharan Africa and is important for its carbohydrate, proteins, iron, vitamin B, and minerals. The produce is consumed as maize meal (ugali), porridge, pastes, and beer, and can be boiled or roasted as fresh as it comes from the farm. Maize is also processed to produce oils for cooking. It is also an important crop for animal feed.",
+      "scientific_name": "Zea mays",
+      "common_name:": "Corn (Maize)",
+      "basic_requirements": "Corn grows best in well-drained, loamy soils with a pH of 5.8-7.0. The plant is sensitive to frost and cannot tolerate temperatures below 10°C (50°F).",
+      "care" : "Corn is propagated by seeds. The seeds should be planted in rows with a spacing of 20-30 cm (8-12 in) between plants and 75-90 cm (30-36 in) between rows. Corn requires regular watering during the growing season. The plant should be fertilized with nitrogen, phosphorus, and potassium to promote growth and yield. Corn is susceptible to pests and diseases such as corn earworm, corn borer, and maize streak virus. The plant should be monitored regularly for signs of infestation and treated with appropriate pesticides.",
+      "uses": "Corn is a staple food for almost half the population of sub-Saharan Africa and is important for its carbohydrate, proteins, iron, vitamin B, and minerals. The produce is consumed as maize meal (ugali), porridge, pastes, and beer, and can be boiled or roasted as fresh as it comes from the farm. Maize is also processed to produce oils for cooking. It is also an important crop for animal feed.",
+      "harvesting": "Corn is ready for harvesting 3-4 months after planting. The ears should be harvested when they are mature and the kernels are fully developed. The ears should be picked by hand and the husks removed. The ears should be dried in the sun for 2-3 days and stored in a cool, dry place. The kernels can be removed from the ears and stored in airtight containers for up to 6 months.",
+      "diseases":[
+        {
+          "category": "Fungal",
+          "name": "Corn__common_rust",
+          "symptoms": "Oval or elongated cinnamon brown pustules on upper and lower surfaces of leaves; pustules rupture and release powdery red spores; pustules turn dark brown-black as they mature and release dark brown powdery spores; if infection is severe, pustules may appear on tassels and ears and leaves may begin to yellow; in partially resistant corn hybrids, symptoms appear as chlorotic or necrotic flecks on the leaves which release little or no spore.",
+          "cause": "Fungus",
+          "comments": "Disease is spread by wind-borne spores; some of the most popularly grown sweet corn varieties have little or no resistance to the disease.",
+          "treatment":"The most effective method of controlling the disease is to plant resistant hybrids; application of appropriate fungicides may provide some degree on control and reduce disease severity; fungicides are most effective when the amount of secondary inoculum is still low, generally when plants only have a few rust pustules per leaf."
+        },
+      {
+        "name": "Corn__gray_leaf_spot",
+        "category": "Fungal",
+        "symptoms": "Small, rectangular, gray to brown lesions with dark borders on leaves; lesions may coalesce to form larger necrotic areas; lesions may have a yellow halo; lesions may be surrounded by a yellow border; lesions may be found on leaf tips, margins, and between veins; lesions may be found on both upper and lower leaf surfaces.",
+        "cause": "Fungus",
+        "comments": "Disease emergence favored by high humidity and moderate temperatures; disease is spread by wind-borne spores.",
+        "treatment": "Plant resistant hybrids where possible; apply appropriate fungicides when disease is first observed; remove and destroy infected leaves; practice crop rotation."
+      }
+      ]
+    },
+    {
+      "image":"https://plantvillage-production-new.s3.amazonaws.com/image/72/file/default-fdd003aeadf7596eca86fa590724a359.jpg",
+      "title": "Grape",
+      "description":"The Common or European grapevine (Vitis vinifera) is a long stemmed, woody vine (liana) which produces high value berries, or grapes. The vines can reach lengths in excess of 30 m and can live for many years with proper management. The leaves of the grape vine are alternately arranged on the stem and are long and broad with 5–7 lobes, typically reaching sizes of 5–20 cm (2.0–7.9 in). Flowers are produced in clusters and fruit. The fruit is a berry known as a grape and grows in clusters from the vine. In wild species, the fruit is 6 mm (1/5 in) in diameter and ripens to dark purple to black with a pale wax bloom. In cultivated plants, the berry is usually much larger, up to 3 cm (1.2 in) long and can be green, red or purple. Vitis vinifera is native to the Mediterranean region, central Europe, and southwestern Asia but is cultivated on every continent except Antarctica.",
+      "scientific_name": "Vitis vinifera",
+      "common_name:": "Grape vine (En)",
+      "basic_requirements": "Grape vines grow best in temperate regions with warm, dry summers and mild winters. The plant requires full sun and well-drained, sandy loam soils with a pH of 6.0-6.5. The plant is sensitive to frost and cannot tolerate temperatures below -15°C (5°F).",
+      "uses":"Grapes are the most widely produced commercial fruit crop in the world. They are often eaten fresh but are also commonly used to produce wine. Grapes can also be processed into jams, and preserves, juices, grape seed oil, grape seed extract, raisins and vinegar",
+      "care": "Grape vines are propagated by cuttings. The cuttings should be 20-30 cm (8-12 in) long and taken from healthy, disease-free plants. The cuttings should be planted in rows with a spacing of 1 m (3.3 ft) between plants and 2 m (6.6 ft) between rows. Grape vines require regular watering during the growing season. The plant should be fertilized with nitrogen, phosphorus, and potassium to promote growth and yield. Grape vines are susceptible to pests and diseases such as powdery mildew, downy mildew, and grapevine leafroll virus. The plant should be monitored regularly for signs of infestation and treated with appropriate pesticides.",
+      "harvesting": "Grapes are ready for harvesting 3-4 months after flowering. The berries should be harvested when they are mature and the skin is soft. The berries should be picked by hand and the stems removed. The berries should be washed and dried in the sun for 2-3 days. The berries can be stored in a cool, dry place for up to 2 weeks. Grapes can be eaten fresh or used to produce wine.",
+      "diseases":[
+        {
+          "name": "Grape__black_measles",
+          "category": "Fungal",
+          "casue": "Fungus",
+          "symptoms": "Symptom appears on leaves, trunk, canes and berries. On leaves we will see intervenaial striping looks like tiger strips. White cultivars shows chlorotic and necrotic strips where as red cultivars shows red areas and necrotic strips. On berries we will see superficial spots and later may coalesce making berries appear black. Trunk/arm/cordons shows dark brown black vascular streaking and oozes dark sap when we cut trunk. Some time this measles in associate with numerous secondary wood rotting fungi which decorate the vineyard completely.",
+          "comments" : "The leaf and berry symptoms may occur together in single cane or may show symptom on only one parts. The severe infestation of measles kill grapevine in a single year which is commonly called apoplexy. The symptoms are common in 5 to 7 year old vineyard. The prune wounds helps in pathogen entrance and establishment",
+          "treatment": "Till date there is no effective method to control this disease. Remove the infected berries, leaves and trunk and destroy them. Protect the prune wounds to minimize fungal infection using wound sealant (5% boric acid in acrylic paint) or essential oil or suitable fungicides."
+        },
+        {
+          "name": "Grape__black_rot",
+          "category": "Fungal",
+          "cause": "Fungus",
+          "symptoms": "Brown lesions on the leaves that develop black dots (pycnidia); grapes have light spots that eventually form pycnidia; grapes harden and turn black, while still remaining on the vine ",
+          "comments": "Disease favors rainy weather; spores may ooze out during rain",
+          "treatment": "Remove all mummified fruit from vines during dormant pruning; cultivate soil during bud break to bury mummies and reduce inoculant; application of appropriate fungicides can help control the disease"
+        },
+        {
+          "name": "Grape__leaf_blight_(isariopsis_leaf_spot)",
+          "casue":"Fungus",
+          "category": "Fungal",
+          "symptoms": "On leaf surface we will see lesions which are irregularly shaped (2 to 25 mm in diameter). Initially lesions are dull red to brown in color turn black later. If disease is severe this lesions may coalesce. On berries we can see symptom similar to black rot but the entire clusters will collapse.",
+          "comments": "Common in tropical and subtropical grapes. The disease appear late in the season. Cynthiana and Cabernet Sauvignon are susceptible to this pathogen.",
+          "treatment": " Fungicides sprayed for other diseases in the season may help to reduce this disease."
+        }
+      ]
+    },
+    {
+      "title": "Peach",
+      "description": "Peach, Prunus persica, is a deciduous tree or shrub in the family Rosaceae grown for its edible fruit of the same name. The peach tree is relatively short with slender and and supple branches. The leaves are alternately arranged, slender and pointed. The tree produces pink flowers which have five petals and emerge in January and February. The fruit is a velvety, soft, fleshy red to yellow-orange fruit which is oval in shape and 3-8 cm in diameter. Peach trees can grow up to 8 m (19 ft) in height and produce fruit for 10 to 20 years. Peach may also be referred to as nectarine, the two fruits belonging to the same species, although nectarines have smooth skin, and are believed to have originated in China.",
+      "scientific_name": "Prunus persica",
+      "common_name:": "Peach tree (En)",
+      "basic_requirements": "Peaches grow best in areas with warm summers and require a summer temperature between 20 and 30°C (68-86°F) for the fruit to mature. The trees also have a chilling requirement to break dormancy but fruit buds can be damaged by prolonged periods below -15°C (5°F) and as such, the majority of production takes place in countries which are relatively close to the equator. In addition, peach trees bloom early and can be damaged by late frosts. Trees grow best in well-draining sandy loams in areas that receive full sun but can will grow in a variety of soils as long as water does not sit on the surface after heavy rainfall. It can be beneficial to plant the trees on elevated land to allow cold air to drain away",
+      "uses": "The leaves of the peach tree are used in herbal teas and the wood is used in furniture making.",
+      "care":" Peaches should be pruned annually, including the year of planting and are best trained to an open center. When the tree is bearing fruit, it is important to thin the fruits to prevent the tree from over-bearing. Aim to have 1 fruit every 8 inches. This allows fruits to become larger and prevents the tree from reducing production the following year.",
+      "harvesting": "Peaches are ready for harvesting in the summer months, usually between June and August. The fruit should be picked when it is fully ripe and the skin is soft. The fruit should be picked by hand and the stem removed. The fruit should be washed and dried in the sun for 2-3 days. The fruit can be stored in a cool, dry place for up to 1 week. Peaches can be eaten fresh or used to make jams, jellies, and pies.",
+      "diseases": [
+        {
+          "name": "Peach__bacterial_spot",
+          "symptoms": "Water soaked, angular gray lesions on the underside of the leaves which turn purple and necrotic in the center and cause a shot hole appearance if lesion center drops out; if lesions are present in high numbers on leaves they may become chlorotic and drop from tree; cankers develop on twigs either as raised blisters or as a dark area surrounding a bud that fails to open; in years of severe infection the entire fruit crop may be lost; lesions on fruit begin as small brown, water-soaked lesions which may exude gum",
+          "cause": "Bacteria",
+          "category": "Bacterial",
+          "comments": "Periods of frequent rainfall during late bloom and early petal drop increase likelihood of fruit and leaf infection; infection is rare during hot, dry weather",
+          "treatment": "Avoid planting susceptible peach varieties in areas where disease is known; once disease is visible it can be difficult to control, protective copper applications in the Fall prior to leaf drop and/or application in early growing season may help prevent the disease; care should be taken as peach trees are very sensitive to copper"
+        }
+      ]
+    },
+    {
+      "image": "https://plantvillage-production-new.s3.amazonaws.com/image/2243/file/default-b8a1275bf94a5866ef6369a8ca845694.jpg",
+      "title": "Peaper, Bell",
+      "description": "Bell peppers, Capsicum annuum are a cultivar group of annual or perennial plants in the family Solanaceae grown for their edible fruits. Bell pepper plants are short bushes with woody stems that grow brightly colored fruits. The alternating leaves are elliptical, smooth edged, and come to a distinct point. The plant produces white or purple bell-shaped flowers which are 2.5 cm (1 in) in diameter. Red, yellow, purple, or brown fruit are produced each season about 3-6 weeks after flowering. Pepper plants can grow 1 m (3.3 ft) tall and are usually grown as annuals in temperate regions for only one growing season. Bell pepper may be referred to as red pepper, yellow pepper or green pepper and is believed to have originated in Central and South America.",
+      "scientific_name": "Capsicum annuum",
+      "common_name:": "Bell pepper (En)",
+      "basic_requirements": "Bell peppers are warm-season crops and grow best at temperatures between 18 and 30°C (65–86°F). They can be grown in many soil types although sandy soils warm faster in Spring and are good for early planting. The soil should have a pH between 6 and 7. Peppers will not tolerate water saturated soil and should be planted in a well draining soil or raised bed. Peppers should be planted in an area that receives full sun for most of the day",
+      "care": "Peppers will benefit from applications of fertilizer to keep them supplied with essential nutrients. A timed release fertilizer can be applied at bloom or the plants can be fed with a liquid fertilizer at planting and every two weeks thereafter. In addition, pepper plants can produce a heavy load of fruit and it can be helpful to provide the plants with some support using stakes or cages to prevent branches from breaking under the weight. Use a soft material to tie plants to stakes or cages.",
+      "uses": "Bell peppers are used in a variety of culinary dishes and are often eaten raw or cooked. They can be stuffed, roasted, grilled, or used in salads, soups, and stews. Bell peppers are a good source of vitamins A and C and are low in calories.",
+      "growing": "",
+      "harvesting": "Bell peppers are ready for harvesting 2-3 months after planting. The fruit should be picked when it is fully ripe and the skin is firm. The fruit should be picked by hand and the stem removed. The fruit should be washed and dried in the sun for 2-3 days. The fruit can be stored in a cool, dry place for up to 1 week. Bell peppers can be eaten raw or used in a variety of culinary dishes.",
+      "diseases": [
+        {
+          "name": "Pepper__bacterial_spot",
+          "category": "Bacterial",
+          "casue": "Bacteria",
+          "symptoms": "Water-soaked lesions that dry out and turn brown forming on the underside of the leaves; raised brown cankers on stems; cracked brown lesions on fruit.",
+          "comments": "Disease emergence favored by warm, wet conditions; the pathogen can be enter a field on seed and transplants and can be spread within a field by wind-driven rain, clipping plants and aerosols.",
+          "treatment": " Use disease free planting material; remove and destroy all crop debris after harvest, or plow material deeply under soil. "
+        }
+      ]
+    },
+    {
+      "image": "https://plantvillage-production-new.s3.amazonaws.com/image/4702/file/default-2f41fcbfca98f989dde66255d80839c5.jpg",
+      "title": "Pomegranate",
+      "description": "Pomegranate, Punica granatum, is a deciduous or evergreen tree or shrub in the family Punicaceae grown for its edible fruits. The pomegranate tree is branched and spiny with glossy, leathery, oval to oblong leaves that grow in whorls of five or more on the branches. The tree produces bright red flowers singly at the tips of the branches and a rounded hexagonal fruit with a thick pink-red skin. The fruit has a thick, leathery rind which protects the pulp[ and seeds inside. The inside of the fruit is separated into compartments by white spongy tissue. Each compartment contains seeds and pulp. Each pomegranate fruit may contain as many as 600 seeds. Pomegranate trees can reach a height of 10 m (33 ft) and can be very long lived, although their economic lifespan is usually between 12 and 15 years. Pomegranate may also be referred to as grenadine or Chinese apple and originated from Central Asia, likely in Iran. ",
+      "scientific_name": "Punica granatum",
+      "common_name:": "Pomegranate (En)",
+      "basic_requirements": "Pomegranates grow best in temperate or semi-arid climates with a cool winter and warm summer. They are less hardy than many other deciduous fruit trees but more hardy than citrus. Pomegranates will suffer severe damage when temperatures drop below -10°C (14°F).",
+      "harvesting": "Pomegranate fruits are generally ready to harvest between 6 and 7 months after flowering, fruits should be allowed to mature fully on the branch prior to harvest as they will not continue to ripen off of the tree. Fully mature fruit turn bright red in color and make a metallic sound when tapped. Fruits should be harvested by cutting from the tree.",
+      "care": "Pomegranates have a similar water requirement to citrus trees and should be provided with additional irrigation during dry periods. Pomegranate orchards usually utilize drip, furrow or sprinkler irrigation systems to promote optimal yields. Pomegranates can be pruned to a single stemmed tree or allowed to grow as a multi-stemmed bush. Suckers should be removed from around the central trunks as they develop. ",
+      "uses": "",
+      "diseases": [
+        {
+          "name": "Pomegranate__diseased",
+          "category": "Bacterial",
+          "cause": "Bacteria",
+          "symptoms": "Light brown spots on leaves and fruit which enlarge and coalesce to form large black patches on fruit; black elliptical spots appear on twigs and become flattened and depressed with a raised margin; infected twigs dry out and die; infection may cause plant death.",
+          "comments": "Disease emergence is favored by rainfall and water saturated soil.",
+          "treatment": "Diseased fruits should be removed and destroyed; infected twigs and branches should be pruned out; applications of appropriate fungicides can help to control the disease."
+        }
+      ]
+    },
+    {
+      "image": "https://plantvillage-production-new.s3.amazonaws.com/image/2630/file/default-00449c901523ff06fad38c7c309c6e02.jpg",
+      "title": "Potato",
+      "description":"The potato (Solanum tuberosum) is a widely cultivated root vegetable in the Solanaceae family. They are native to the Andes Mountains in South America and have been grown for thousands of years. Potatoes are a staple food in many countries around the world and are used in a wide variety of dishes. They are high in carbohydrates, fiber, and vitamins C and B6.",
+      "scientific_name": "Solanum tuberosum",
+      "common_name:": "Potato (En)",
+      "uses": "Potato tubers are a staple food source in temperate regions and are eaten after cooking. They may be cut or sliced and made into potato chips or fries. Potatoes can also be processed into starch, alcohol or flour.",
+      "basic_requirements": "Potatoes grow best in cool, temperate climates with temperatures between 15-20°C (59-68°F). The plant requires full sun and well-drained, sandy loam soils with a pH of 5.0-6.0. The plant is sensitive to frost and cannot tolerate temperatures below -2°C (28°F).",
+      "care": "Potatoes are propagated by tubers. The tubers should be planted in rows with a spacing of 30-40 cm (12-16 in) between plants and 75-90 cm (30-36 in) between rows. Potatoes require regular watering during the growing season. The plant should be fertilized with nitrogen, phosphorus, and potassium to promote growth and yield. Potatoes are susceptible to pests and diseases such as potato blight, potato cyst nematode, and potato virus Y. The plant should be monitored regularly for signs of infestation and treated with appropriate pesticides.",
+      "harvesting": "Harvesting potatoes is the process of collecting the tubers, which are the edible part of the potato plant, from the soil. The timing of the harvest is crucial and will depend on the variety of potato being grown. Generally, potatoes are ready to be harvested when the foliage has died back and the skin of the tubers has hardened.",
+      "diseases":[
+        {
+          "name": "Potato__early_blight",
+          "category": "Fungal",
+          "cause": "Fungus",
+          "symptoms": "Brown spots with a target-like appearance on leaves; spots may have a yellow halo; spots may merge to form large necrotic areas; leaves may become distorted and drop from plant.",
+          "comments": "Disease emergence favored by warm, wet conditions; spores may be spread by wind, rain, or irrigation.",
+          "treatment": "Remove and destroy infected leaves; apply appropriate fungicides when disease is first observed; practice crop rotation."
+        },
+        {
+          "name": "Potato__late_blight",
+          "category": "Fungal",
+          "cause": "Fungus",
+          "symptoms": "Water-soaked lesions on leaves; lesions may have a white moldy growth on the underside of the leaf; lesions may be surrounded by a yellow halo; lesions may be found on stems and fruit.",
+          "comments": "Disease emergence favored by cool, wet conditions; spores may be spread by wind, rain, or irrigation.",
+          "treatment": "Remove and destroy infected leaves; apply appropriate fungicides when disease is first observed; practice crop rotation."
+        }
+      ]
+    },
+    {
+      "image": "https://plantvillage-production-new.s3.amazonaws.com/image/2640/file/default-65bfe2020b8d74ed791e40d09d026d4b.jpg",
+      "title": "strawberry",
+      "description" : "Strawberry is the name given to several plant species in the genus Fragaria, including Fragaria vesca (wild strawberry), Fragaria grandiflora, Fragaria magna, Fragaria chiloensis and Fragaria ananassa (or Fragaria x ananassa) which are grown for their edible fruit. Strawberry is an herbaceous perennial in the family Rosaceae. The plant has a short stem and trifoliate leaves which form a crown. close to the ground. The leaves display a variety of characteristic depending on the species, some are evergreen whereas some have leaves that will die and fall off in winter. The plant produces flower stalks from the crown and the the flowers are white in color. The fruit of the plant is red and fleshy with small seeds on the outside. Strawberry can grow 20–25 cm (8–10 in) in height and has an economic life of 2–4 years before the plants are replaced. Strawberry may also be referred to as garden strawberry and the plant is grown in most northern temperate regions of the world. The first domestic hybrids were created in Europe. ",
+      "scientific_name": "Fragaria x ananassa",
+      "common_name:": "Strawberry (En)",
+      "basic_requirements": " Strawberries grow very well in cool temperate climates, at temperatures below 30°C (86°F)and require at least 8 hours of sunlight per day. They can be grown successfully in a wide variety of soils from sandy soils to silty clay but will grow best in a deep, well draining loam rich in organic matter. The optimum pH for their growth is between 5.5 and 6.5. If drainage is poor then it is recommended to plant strawberry on beds raised by a minimum of 15–20 cm (6–8 in).",
+      "care": "In the first growing season after planting, the plants should not be allowed to produce fruit in order for the plants to concentrate their energy of vegetative growth. Pinch off any flowers as they are produced. Fruit can be harvested in the year after planting. When the desired density of plants is reached cut off any runners or cultivate with a hoe. Weeds should also be removed from the strawberry bed regularly. Strawberry plants also require adequate moisture and should receive 2.5–3.8 cm (1–1.5 in) of water per week either from rainfall or irrigation if needed. Strawberries will benefit from the addition of mulch which helps to conserve soil moisture and protects the plants from late frosts in Spring. If frost is forecast after planting the plants should be protected with row covers or other suitable material. ",
+      "uses": "Strawberries are eaten fresh or used in a variety of culinary dishes such as jams, jellies, pies, and ice cream. They are also used to make juices, syrups, and wines.",
+      "harvesting": "Fruit should be harvested regularly (every other day) when it is being produced by picking the berry along with the cap and 0.5 in of stem. remove the berries by pinching the stem. Harvest only fully ripe strawberries as they will not ripen further after harvest.",
+      "diseases": [
+        {
+          "name": "Strawberry___leaf_scorch",
+          "category": "Fungal",
+          "cause": "Fungus",
+          "symptoms": "Irregular dark purple or brown blotches on upper leaf surface which may colaesce to produce large purplish brown patches; tissue between blotches may turn purple or red; lesions may also develop on flowers and fruits; affected petals may wither and drop from plant; lesions may girdle peduncles causing death of fruit.",
+          "comments": "Disease emergence favored by wet foliage for extended periods of time.",
+          "treatment": "Plant resistant varieties; regular renewal of plants; plant in an area with good air circulation and drainage in full sun; remove all foliage from plants at harvest; application of appropriate foliar fungicide may be required to provide control."
+        }
+      ]
+    },
+    {
+     "image": "https://plantvillage-production-new.s3.amazonaws.com/image/3809/file/default-66f3f62ca34234338b8e8bc5d7c63c30.jpg",
+     "title": "Tomato",
+     "scientific_name": "Lycopersicon esculentum",
+      "common_name:": "Tomato (En)",
+      "uses": "Tomato fruit can be eaten raw or cooked and is used in many dishes. The fruit may also be processed into juice, soup, ketchup, puree, paste or powder.",
+      "description": "Tomato is an herbaceous annual in the family Solanaceae grown for its edible fruit. The plant can be erect with short stems or vine-like with long, spreading stems.",
+      "care":  "",
+      "basic_requirements": "Tomatoes grow best in warm, sunny climates with temperatures between 20-30°C (68-86°F). The plant requires full sun and well-drained, sandy loam soils with a pH of 6.0-6.8. The plant is sensitive to frost and cannot tolerate temperatures below 10°C (50°F).",
+      "harvesting" :"Tomatoes are ready for harvesting 2-3 months after planting. The fruit should be picked when it is fully ripe and the skin is firm. The fruit should be picked by hand and the stem removed. The fruit should be washed and dried in the sun for 2-3 days. The fruit can be stored in a cool, dry place for up to 1 week. Tomatoes can be eaten raw or used in a variety of culinary dishes.",
+      "diseases": [
+        {
+          "name": "Tomato__bacterial_spot",
+          "category": "Bacterial",
+          "cause": "Bacteria",
+          "symptoms": "Bacterial spot lesions starts out as small water-soaked spots; lesions become more numerous and coalesce to form necrotic areas on the leaves giving them a blighted appearance; of leaves drop from the plant severe defoliation can occur leaving the fruit susceptible to sunscald; mature spots have a greasy appearance and may appear transparent when held up to light; centers of lesions dry up and fall out of the leaf; blighted leaves often remain attached to the plant and give it a blighted appearance; fruit infections start as a slightly raised blister; lesions may have a faint halo which eventually disappears; lesions on fruit may have a raised margin and sunken center which gives the fruit a scabby appearance.",
+          "comments": "Bacteria survive on crop debris; disease emergence favored by warm temperatures and wet weather; symptoms are very similar to other tomato diseases but only bacterial spot will cause a cut leaf to ooze bacterial exudate; the disease is spread by infected seed, wind-driven rain, diseased transplants, or infested soil; bacteria enter the plant through any natural openings on the leaves or any openings caused by injury to the leaves.",
+          "treatment": "Use only certified seed and healthy transplants; remove all crop debris from planting area; do not use sprinkler irrigation, instead water from base of plant; rotate crops."
+        }, 
+        {
+          "name": "Tomato__early_blight",
+          "category": "Fungal",
+          "cause": "Fungus",
+          "symptoms": "Early blight symptoms start as oval shaped lesions with a yellow chlorotic region across the lesion; concentric leaf lesions may be seen on infected leaves; leaf tissue between veins is destroyed; severe infections can cause leaves to completely collapse; as the disease progresses leaves become severely blighted leading to reduced yield; tomato stems may become infected with the fungus leading to Alternaria stem canker; initial symptoms of of stem canker are the development of dark brown regions on the stem; stem cankers may enlarge to girdle the whole stem resulting in the death of the whole plant; brown streaks can be found in the vascular tissue above and below the canker region; fruit symptoms include small black v-shaped lesions at the shoulders of the fruit (the disease is also known black shoulder); lesions may also appear on the fruit as dark flecks with concentric ring pattern; fruit lesions can seen in the field or may develop during fruit transit to the market; the lesions may have a velvety appearance caused by sporulation of the fungus",
+        "comments": "Disease can spread rapidly after plants have set fruit; movement of air-borne spores and contact with infested soil are causes for the spread of the disease",
+        "treatment": "Apply appropriate fungicide at first sign of disease; destroy any volunteer solanaceous plants (tomato, potato, nightshade etc); practice crop rotation"
+
+        },
+        {
+          "name": "Tomato__late_blight",
+          "category": "Fungal",
+          "cause": "Fungus",
+          "symptoms": "Late blight affects all aerial parts of the tomato plant; initial symptoms of the disease appear as water-soaked green to black areas on leaves which rapidly change to brown lesions; fluffy white fungal growth may appear on infected areas and leaf undersides during wet weather; as the disease progresses, foliage becomes becomes shriveled and brown and the entire plant may die; fruit lesions start as irregularly shaped water soaked regions and change to greasy spots; entire fruit may become infected and a white fuzzy growth may appear during wet weather.",
+          "comments": "Can devastate tomato plantings.",
+          "treatment": "Plant resistant varieties; if signs of disease are present or if rainy conditions are likely or if using overhead irrigation appropriate fungicides should be applied."
+        },
+        {
+          "name": "Tomato__leaf_mold",
+          "category": "Fungal",
+          "cause": "Fungus",
+          "symptoms": "The older leaves exhibit pale greenish to yellow spots (without distinguishable margins) on upper surface. Whereas the lower portion of this spots exhibit green to brown velvety fungal growth. As the disease progress the spots may coalesce and appear brown. The infected leaves become wither and die but stay attached to the plant. The fungus also infects flowers and fruits. The affected flowers become black and drop off. The affected fruit intially shows smooth black irregular area on the stem end but later it becomes sunken, leathery and dry.",
+          "comments": "The disease is favored by high relative humidity. Also a common disease in green house tomato crop.",
+          "treatment":"Grow available resistant varieties. Avoid leaf wetting and overhead application of water. Follow proper spacing to provide good air circulation around the plants. Remove the infected plant debris and burn them. If the disease is severe scary suitable fungicide."
+        },
+        {
+          "name": "Tomato__mosaic_virus",
+          "category": "Viral",
+          "cause": "Virus",
+          "symptoms":"Symptoms can occur at any growth stage and any part of the plant can be affected; infected leaves generally exhibit a dark green mottling or mosaic; some strains of the virus can cause yellow mottling on the leaves; young leaves may be stunted or distorted; severely infected leaves may have raised green areas; fruit yields are reduced in infected plants; green fruit may have yellow blotches or necrotic spots; dark necrotic streaks may appear on the stems, petioles leaves and fruit.",
+          "comments": "ToMV is a closely related strain of Tobacco mosaic virus (TMV), it enters fields via infected weeds, peppers or potato plants; the virus may also be transmitted to tomato fields by grasshoppers, small mammals and birds.",
+          "treatment": "Plant varieties that are resistant to the virus; heat treating seeds at 70°C (158°F) for 4 days or at 82–85°C (179.6–185°F) for 24 hours will help to eliminate any virus particles on the surface of the seeds; soaking seed for 15 min in 100 g/l of tri-sodium phosphate solution (TSP) can also eliminate virus particles - seeds should be rinsed thoroughly and laid out to dry after this treatment; if the virus is confirmed in the field, infected plants should be removed and destroyed to limit further spread; plant tomato on a 2-year rotation, avoiding susceptible crops such as peppers, eggplant, cucurbits and tobacco; disinfect all equipment when moving from infected areas of the field."
+        },
+        {
+          "name": "Tomato__septoria_leaf_spot",
+          "symptoms": "Symptoms may occur at any stage of tomato development and begin as small, water-soaked spots or circular grayish-white spots on the underside of older leaves; spots have a grayish center and a dark margin and they may colasece; fungal fruiting bodies are visible as tiny black specks in the center of spot; spots may also appear on stems, fruit calyxes, and flowers.",
+          "cause": "Fungus",
+          "category": "Fungal",
+          "comments": "Spread by water splash; fungus overwinters in plant debris.",
+          "treatment": " Ensure all tomato crop debris is removed and destroyed in Fall or plowed deep into soil; plant only disease-free material; avoid overhead irrigation; stake plants to increase air circulation through the foliage; apply appropriate fungicide if necessary."
+        },
+        {
+          "name":"Tomato__spider_mites_(two_spotted_spider_mite)",
+          "category": "Insect",
+          "cause": "Mite",
+          "symptoms": "Leaves stippled with yellow; leaves may appear bronzed; webbing covering leaves; mites may be visible as tiny moving dots on the webs or underside of leaves, best viewed using a hand lens; usually not spotted until there are visible symptoms on the plant; leaves turn yellow and may drop from plant.",
+          "comments": "Spider mites thrive in dusty conditions; water-stressed plants are more susceptible to attack.",
+          "treatment": "In the home garden, spraying plants with a strong jet of water can help reduce buildup of spider mite populations; if mites become problematic apply insecticidal soap to plants; certain chemical insecticides may actually increase mite populations by killing off natural enemies and promoting mite reproduction."
+        },
+        {
+          "name": "Tomato__target_spot",
+          "category": "Fungal",
+          "cause": "Fungus",
+          "symptoms": "The fungus infects all parts of plant. Infected leaves shows small, pinpoint, water soaked spots initially. As the disease progress the spots enlarge to become necrotic lesions with conspicuous concentric circles, dark margins and light brown centers. Whereas the fruits exhibit brown, slightly sunken flecks in the beginning but later the lesions become large pitted appearance.",
+          "comments":"The pathogen infects cucumber, pawpaw , ornamental plants, some weed species etc. The damaged fruits are susceptible for this disease.",
+          "treatment": "Remove the plant debris and burn them. Avoid over application of nitrogen fertilizer. If the disease is severe spray suitable fungicides."
+        },
+        {
+          "name": "Tomato__yellow_leaf_curl_virus",
+          "category": "Viral",
+          "symptoms":"The infected leaves become reduced in size, curl upward, appear crumpled and show yellowing of veins and leaf margins. The internodes become shorter and whole plant appear stunted and bushy. The whole plant stand erect with only upright growth. The flowers may not develop and drop off.",
+          "cause": "Virus",
+          "comments": "The virus is transmitted by white flies and may cause 100 % yield loss if the plants infect at early stage of crop. The virus also infect other hosts like common bean, ornamental plants and several weed species.",
+          "treatment": "Grow available resistant varieties. Transplant only disease and whiteflies free seedlings. Remove the infected plants and burn them. Keep the field free from weeds. Use yellow sticky traps to monitor and control whiteflies. If the insect infestation is severe spray suitable insecticides."
+
+        }
+      ]
+    }
+]
