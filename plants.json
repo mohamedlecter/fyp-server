@@ -149,6 +149,7 @@
       ]
     },
     {
+      "image":"https://plantvillage-production-new.s3.amazonaws.com/image/95/file/default-41e046bff0e72cb92ea6cbdead09f928.jpg",
       "title": "Peach",
       "description": "Peach, Prunus persica, is a deciduous tree or shrub in the family Rosaceae grown for its edible fruit of the same name. The peach tree is relatively short with slender and and supple branches. The leaves are alternately arranged, slender and pointed. The tree produces pink flowers which have five petals and emerge in January and February. The fruit is a velvety, soft, fleshy red to yellow-orange fruit which is oval in shape and 3-8 cm in diameter. Peach trees can grow up to 8 m (19 ft) in height and produce fruit for 10 to 20 years. Peach may also be referred to as nectarine, the two fruits belonging to the same species, although nectarines have smooth skin, and are believed to have originated in China.",
       "scientific_name": "Prunus persica",
@@ -347,5 +348,71 @@
 
         }
       ]
+    },
+    {
+      "title": "African Eggplant" ,
+      "image": "https://plantvillage-production-new.s3.amazonaws.com/image/6382/file/default-be05ac274c8fe4b9fc4ffea3ee496d72.jpg",
+      "description": "African eggplant, Solanum aethiopicum, is a perennial plant in the family Solanaceae grown for its edible fruit. The plant is erect with branching and can grow to 2 m (6.6 ft) in height. The leaves are lobed and the flowers are white to purple in color. The fruit is a round or oval berry which is green when immature and turns yellow, orange or red when ripe. The fruit is 2-10 cm (0.8-4 in) in diameter and contains numerous seeds. African eggplant is grown in tropical and subtropical regions of the world and is believed to have originated in Africa.",
+      "scientific_name": "Solanum aethiopicum",
+      "common_name:": "African eggplant (En)",
+      "basic_requirements": "African eggplant grows best in tropical and subtropical climates with temperatures between 20 and 30°C (68-86°F). The plant requires full sun and well-drained, sandy loam soils with a pH of 5.5-6.5. The plant is sensitive to frost and cannot tolerate temperatures below 10°C (50°F).",
+      "care": "African eggplant is propagated by seeds. The seeds should be planted in rows with a spacing of 30-40 cm (12-16 in) between plants and 75-90 cm (30-36 in) between rows. African eggplant requires regular watering during the growing season. The plant should be fertilized with nitrogen, phosphorus, and potassium to promote growth and yield. African eggplant is susceptible to pests and diseases such as aphids, spider mites, and bacterial wilt. The plant should be monitored regularly for signs of infestation and treated with appropriate pesticides.",
+      "uses": "African eggplant fruit can be eaten raw or cooked and is used in many dishes. The fruit may also be processed into juice, soup, or puree.",
+      "harvesting": "African eggplant fruit is ready for harvesting 2-3 months after planting. The fruit should be picked when it is fully ripe and the skin is firm. The fruit should be picked by hand and the stem removed. The fruit should be washed and dried in the sun for 2-3 days. The fruit can be stored in a cool, dry place for up to 1 week. African eggplant fruit can be eaten raw or used in a variety of culinary dishes."
+
+    },
+    {
+      "title": "Alfalfa",
+      "image": "https://plantvillage-production-new.s3.amazonaws.com/image/2226/file/default-0848af1431525dc766622dc146fd4a2f.jpg",
+      "description": "Alfalfa, Medicago sativa, is a perennial plant in the family Fabaceae grown for its nutritious forage. The plant has a deep root system and trifoliate leaves which have toothed leaflets. The plant produces small purple flowers in clusters which develop into fruits containing the seeds. Alfalfa is grown as forage for cattle and horses and is also used as a cover crop and for green manure. Alfalfa is grown in temperate regions throughout the world and is believed to have originated in Iran.",
+      "scientific_name": "Medicago sativa",
+      "common_name:": "Alfalfa (En)",
+      "basic_requirements": "Alfalfa grows best in temperate climates with temperatures between 15 and 30°C (59-86°F). The plant requires full sun and well-drained, loamy soils with a pH of 6.5-7.5. Alfalfa is drought tolerant and can grow in soils with low fertility. The plant is sensitive to frost and cannot tolerate temperatures below -5°C (23°F).",
+      "care": "Alfalfa is propagated by seeds. The seeds should be planted in rows with a spacing of 30-40 cm (12-16 in) between plants and 75-90 cm (30-36 in) between rows. Alfalfa requires regular watering during the growing season. The plant should be fertilized with nitrogen, phosphorus, and potassium to promote growth and yield. Alfalfa is susceptible to pests and diseases such as aphids, spider mites, and bacterial wilt. The plant should be monitored regularly for signs of infestation and treated with appropriate pesticides.",
+      "uses": "Alfalfa is used as forage for cattle and horses and is also used as a cover crop and for green manure.",
+      "harvesting": "Alfalfa is ready for harvesting 2-3 months after planting. The plant should be cut when it is fully mature and the leaves are green. The plant should be cut by hand or with a machine and the leaves should be dried in the sun for 2-3 days. The leaves can be stored in a cool, dry place for up to 1 year. Alfalfa leaves can be used as forage for cattle and horses or as a cover"
+    },
+    {
+      "title": "Alomnd",
+      "image": "https://plantvillage-production-new.s3.amazonaws.com/image/3321/file/default-db2bc3a3033f5b335b26398676833498.jpg",
+      "description": "Alfalfa, Medicago sativa, is a perennial plant in the family Fabaceae grown for its nutritious forage. The plant has a deep root system and trifoliate leaves which have toothed leaflets. The plant produces small purple flowers in clusters which develop into fruits containing the seeds. Alfalfa is grown as forage for cattle and horses and is also used as a cover crop and for green manure. Alfalfa is grown in temperate regions throughout the world and is believed to have originated in Iran.",
+      "scientific_name": "Medicago sativa",
+      "common_name:": "Alfalfa (En)",
+      "basic_requirements": "Alfalfa grows best in temperate climates with temperatures between 15 and 30°C (59-86°F). The plant requires full sun and well-drained, loamy soils with a pH of 6.5-7.5. Alfalfa is drought tolerant and can grow in soils with low fertility. The plant is sensitive to frost and cannot tolerate temperatures below -5°C (23°F).",
+      "care": "Alfalfa is propagated by seeds. The seeds should be planted in rows with a spacing of 30-40 cm (12-16 in) between plants and 75-90 cm (30-36 in) between rows. Alfalfa requires regular watering during the growing season. The plant should be fertilized with nitrogen, phosphorus, and potassium to promote growth and yield. Alfalfa is susceptible to pests and diseases such as aphids, spider mites, and bacterial wilt. The plant should be monitored regularly for signs of infestation and treated with appropriate pesticides.",
+      "uses": "Alfalfa is used as forage for cattle and horses and is also used as a cover crop and for green manure.",
+      "harvesting": "Alfalfa is ready for harvesting 2-3 months after planting. The plant should be cut when it is fully mature and the leaves are green. The plant should be cut by hand or with a machine and the leaves should be dried in the sun for 2-3 days. The leaves can be stored in a cool, dry place for up to 1 year. Alfalfa leaves can be used as forage for cattle and horses or as a cover"
+    },
+    {
+      "title":" Avocado",
+      "image": "https://plantvillage-production-new.s3.amazonaws.com/image/3350/file/default-7c920da83c99b4bda7904e32f2fde01d.jpg",
+      "description": "Avocado, Persea americana, is an evergreen tree in the family Lauraceae which grown for its nutritious fruit, the avocado. The avocado tree is large and dome-shaped with oval or elliptical leaves arranged in a spiral on the tips of branches. The leaves are dark green and glossy on the upper surface, lighter green on the underside and have a distinct anise scent when crushed. The tree produces small greenish-yellow flowers which are pollinated by bees. The fruit is a large berry with a single large seed known as a pit or stone. The fruit is green when immature and ripens to a dark purple or black. The fruit has a leathery skin and soft, buttery flesh with a mild, nutty flavor. Avocado is grown in tropical and subtropical regions of the world and is believed to have originated in Mexico.",
+      "scientific_name": "Persea americana",
+      "common_name:": "Avocado (En)",
+      "basic_requirements": "Avocado grows best in tropical and subtropical climates with temperatures between 20 and 30°C (68-86°F). The plant requires full sun and well-drained, sandy loam soils with a pH of 6.0-6.5. Avocado is drought tolerant and can grow in soils with low fertility. The plant is sensitive to frost and cannot tolerate temperatures below -2°C (28°F).",
+      "care": "Avocado is propagated by seeds. The seeds should be planted in rows with a spacing of 30-40 cm (12-16 in) between plants and 75-90 cm (30-36 in) between rows. Avocado requires regular watering during the growing season. The plant should be fertilized with nitrogen, phosphorus, and potassium to promote growth and yield. Avocado is susceptible to pests and diseases such as aphids, spider mites, and bacterial wilt. The plant should be monitored regularly for signs of infestation and treated with appropriate pesticides.",
+      "uses": "Avocado fruit can be eaten raw or cooked and is used in many dishes. The fruit may also be processed into juice, soup, or puree.",
+      "harvesting": "Avocado fruit is ready for harvesting 2-3 months after planting. The fruit should be picked when it is fully ripe and the skin is firm. The fruit should be picked by hand and the stem removed. The fruit should be washed and dried in the sun for 2-3 days. The fruit can be stored in a cool, dry place for up to 1 week. Avocado fruit can be eaten raw or used in a variety of culinary dishes."
+    },
+    {
+      "title": "Banana",
+      "image": "https://plantvillage-production-new.s3.amazonaws.com/image/2747/file/default-e70d8c3d36a3064e7b93d57807bbd206.jpg",
+      "description": "Banana, Musa spp., is a large, herbaceous plant native to Southeast Asia but now grown throughout the tropics. The banana plant is a large perennial herb with leaf sheaths that form trunk-like pseudostems. The plant is often mistaken for a tree but has no woody tissue. The leaves are large, 3–3.5 m (9.8–11.5 ft) long, and 0.6 m (2 ft) wide. The plant produces large, hanging clusters of fruit with a protective skin. The fruit is variable in size, color, and firmness, but is usually elongated and curved, with soft flesh rich in starch covered with a rind which may be green, yellow, red, purple, or brown when ripe. The fruit grows in clusters hanging from the top of the plant. Bananas are grown in tropical and subtropical regions of the world and are believed to have originated in Southeast Asia.",
+      "scientific_name": "Musa spp.",
+      "common_name:": "Banana (En)",
+      "basic_requirements": "Banana grows best in tropical and subtropical climates with temperatures between 20 and 30°C (68-86°F). The plant requires full sun and well-drained, sandy loam soils with a pH of 6.0-6.5. Banana is drought tolerant and can grow in soils with low fertility. The plant is sensitive to frost and cannot tolerate temperatures below -2°C (28°F).",
+      "care": "Banana is propagated by seeds. The seeds should be planted in rows with a spacing of 30-40 cm (12-16 in) between plants and 75-90 cm (30-36 in) between rows. Banana requires regular watering during the growing season. The plant should be fertilized with nitrogen, phosphorus, and potassium to promote growth and yield. Banana is susceptible to pests and diseases such as aphids, spider mites, and bacterial wilt. The plant should be monitored regularly for signs of infestation and treated with appropriate pesticides.",
+      "uses": "Bananas are a good source of vitamins and minerals, including vitamin C, vitamin B6, and potassium, and are often used as a healthy snack or ingredient in smoothies and other foods.The fruit is the most widely used part of the plant and can be eaten fresh or cooked or processed into starch, chips, puree, beer, vinegar or dehydrated to produce dried fruit. The fruit may also be processed into flour which is used in baking, soups or beverages. The flowers of the plant may be used as a vegetable.",
+      "harvesting": "Banana harvesting is the process of collecting ripe or near-ripe bananas from the plant. The timing of the harvest is crucial, as it will determine the quality of the fruit and its intended use. To harvest bananas, one must first identify when the fruit is mature, which can be determined by observing signs such as yellowing of the fruit and leaves. Once the bananas are ready to be harvested, a sharp, clean knife should be used to cut the stem of the banana bunch from the plant. It's important to handle the bananas carefully to avoid bruising, and to gently place them in a container or on a flat surface for transport. "
+    }, {
+      "title": "Barley",
+      "image": "https://plantvillage-production-new.s3.amazonaws.com/image/2747/file/default-e70d8c3d36a3064e7b93d57807bbd206.jpg",
+      "description": "Barley, Hordeum vulgare, is an annual herb in the family Poaceae and is one of the most important cereal crops in the world. Barley is a versatile and widely grown crop and one of the most important cereal crops in the world. The plant is used for food, fodder, and for malting and in the preparation of beverages. Barley is a cool-season crop that is quick to mature, easy to grow, and resistant to adverse growing conditions. The plant is also known for its drought tolerance and ability to grow in low-fertility soils. Barley is grown in temperate climates and is cultivated in many countries around the world.",
+      "scientific_name": "Hordeum vulgare",
+      "common_name:": "Barley (En)",
+      "basic_requirements": "Barley grows best in cool, temperate climates with temperatures between 15 and 25°C (59-77°F). The plant requires full sun and well-drained, loamy soils with a pH of 6.0-7.5. Barley is drought tolerant and can grow in soils with low fertility. The plant is sensitive to frost and cannot tolerate temperatures below -2°C (28°F).",
+      "care": "Barley is propagated by seeds. The seeds should be planted in rows with a spacing of 30-40 cm (12-16 in) between plants and 75-90 cm (30-36 in) between rows. Barley requires regular watering during the growing season. The plant should be fertilized with nitrogen, phosphorus, and potassium to promote growth and yield. Barley is susceptible to pests and diseases such as aphids, spider mites, and bacterial wilt. The plant should be monitored regularly for signs of infestation and treated with appropriate pesticides.",
+      "uses": "Barley is used as food for humans and animals and is also used in the production of malt for brewing beer and other beverages. The grain is used in soups, stews, bread, and other baked goods. Barley is also used as a cover crop and for green manure.",
+      "harvesting": "Barley is ready for harvesting 2-3 months after planting. The plant should be cut when it is fully mature and the leaves are green. The plant should be cut by hand or with a machine and the leaves should be dried in the sun for 2-3 days. The leaves can be stored in a cool, dry place for up to 1 year. Barley leaves can be used as forage for cattle and horses or as a cover"
     }
 ]

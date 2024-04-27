@@ -94,39 +94,35 @@ def search_plants_by_name(plant_name):
     
 
 def find_plant_by_disease(disease_name):
-    plants = db.db.plants.find()
-    found_plants = []
-    
-    # Normalize disease name by removing spaces and converting to lowercase
-    normalized_disease_name = re.sub(r'\s+', '', disease_name).lower()
-    
+    plants = db.db.plants.find({"diseases.name": {"$regex": disease_name, "$options": "i"}})
+    plants_list = []
     for plant in plants:
-        matching_disease = None
+        found_diseases = []
         other_diseases = []
         for disease in plant.get("diseases", []):
-            # Normalize disease name for comparison
-            normalized_plant_disease = re.sub(r'\s+', '', disease.get("name", "")).lower()
-            if normalized_plant_disease == normalized_disease_name:
-                matching_disease = disease
+            if disease_name.lower() in disease["name"].lower():
+                found_diseases.append({
+                    "category": disease.get("category", ""),
+                    "cause": disease.get("cause", ""),
+                    "comments": disease.get("comments", ""),
+                    "name": disease.get("name", ""),
+                    "symptoms": disease.get("symptoms", ""),
+                    "treatment": disease.get("treatment", "")
+                })
             else:
-                other_diseases.append(disease)
-        
-        if matching_disease or other_diseases:
-            found_plants.append({
-                'id': str(plant['_id']),
-                "title": plant.get("title", ""),
-                "description": plant.get("description", ""),
-                "scientific_name": plant.get("scientific_name", ""),
-                "image": plant.get("image", ""),
-                "uses": plant.get("uses", ""),
-                "basic_requirements": plant.get("basic_requirements", ""),
-                "growing": plant.get("growing", ""),
-                "care": plant.get("care", ""),
-                "harvesting": plant.get("harvesting", ""),
-                "matching_disease": matching_disease,
-                "other_diseases": other_diseases
-            })
-    return jsonify(found_plants), 200
+                other_diseases.append({
+                    "category": disease.get("category", ""),
+                    "cause": disease.get("cause", ""),
+                    "comments": disease.get("comments", ""),
+                    "name": disease.get("name", ""),
+                    "symptoms": disease.get("symptoms", ""),
+                    "treatment": disease.get("treatment", "")
+                })
+        plants_list.append({
+            "found_diseases": found_diseases,
+            "other_diseases": other_diseases
+        })
+    return jsonify(plants_list), 200
 
 
 def upload_file(file_path):
