@@ -94,35 +94,57 @@ def search_plants_by_name(plant_name):
     
 
 def find_plant_by_disease(disease_name):
-    plants = db.db.plants.find({"diseases.name": {"$regex": disease_name, "$options": "i"}})
-    plants_list = []
-    for plant in plants:
-        found_diseases = []
-        other_diseases = []
-        for disease in plant.get("diseases", []):
-            if disease_name.lower() in disease["name"].lower():
-                found_diseases.append({
-                    "category": disease.get("category", ""),
-                    "cause": disease.get("cause", ""),
-                    "comments": disease.get("comments", ""),
-                    "name": disease.get("name", ""),
-                    "symptoms": disease.get("symptoms", ""),
-                    "treatment": disease.get("treatment", "")
-                })
-            else:
-                other_diseases.append({
-                    "category": disease.get("category", ""),
-                    "cause": disease.get("cause", ""),
-                    "comments": disease.get("comments", ""),
-                    "name": disease.get("name", ""),
-                    "symptoms": disease.get("symptoms", ""),
-                    "treatment": disease.get("treatment", "")
-                })
-        plants_list.append({
-            "found_diseases": found_diseases,
-            "other_diseases": other_diseases
-        })
-    return jsonify(plants_list), 200
+    # Check if the disease name contains "healthy"
+    if "healthy" in disease_name:
+        # Query the plant collection to find information about the plant itself
+        plant_info = db.db.plants.find_one({"title": disease_name.split("__")[0]})
+        if plant_info:
+            return jsonify({
+                'id': str(plant_info['_id']),
+                "title": plant_info.get("title", ""),
+                "description": plant_info.get("description", ""),
+                "scientific_name": plant_info.get("scientific_name", ""),
+                "image": plant_info.get("image", ""),
+                "uses": plant_info.get("uses", ""),
+                "basic_requirements": plant_info.get("basic_requirements", ""),
+                "growing": plant_info.get("growing", ""),
+                "care": plant_info.get("care", ""),
+                "harvesting": plant_info.get("harvesting", ""),
+                "diseases": plant_info.get("diseases", [])
+            }), 200
+        else:
+            return jsonify({"error": "Plant not found"}), 404
+    else:
+        # Query the disease collection as before
+        plants = db.db.plants.find({"diseases.name": {"$regex": disease_name, "$options": "i"}})
+        plants_list = []
+        for plant in plants:
+            found_diseases = []
+            other_diseases = []
+            for disease in plant.get("diseases", []):
+                if disease_name.lower() in disease["name"].lower():
+                    found_diseases.append({
+                        "category": disease.get("category", ""),
+                        "cause": disease.get("cause", ""),
+                        "comments": disease.get("comments", ""),
+                        "name": disease.get("name", ""),
+                        "symptoms": disease.get("symptoms", ""),
+                        "treatment": disease.get("treatment", "")
+                    })
+                else:
+                    other_diseases.append({
+                        "category": disease.get("category", ""),
+                        "cause": disease.get("cause", ""),
+                        "comments": disease.get("comments", ""),
+                        "name": disease.get("name", ""),
+                        "symptoms": disease.get("symptoms", ""),
+                        "treatment": disease.get("treatment", "")
+                    })
+            plants_list.append({
+                "found_diseases": found_diseases,
+                "other_diseases": other_diseases
+            })
+        return jsonify(plants_list), 200
 
 
 def upload_file(file_path):
