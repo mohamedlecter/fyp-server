@@ -23,7 +23,7 @@ def register_user():
     new_user = User(username, password, email)
     db.db.users.insert_one({'username': new_user.username, 'password': new_user.password, 'email': new_user.email})
 
-    return jsonify({'message': 'Registration successful'}), 201
+    return jsonify({'message': 'Registration successful', 'user': new_user}), 201
 
 
 def login_user():
