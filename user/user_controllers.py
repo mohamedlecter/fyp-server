@@ -11,7 +11,7 @@ db = Config.db
 def register_user():
     username = request.json.get('username')
     password = request.json.get('password')
-    email = request.json.get('email').lower()
+    email = request.json.get('email')
 
     if not username or not password:
         return jsonify({'error': 'Username and password are required'}), 400
