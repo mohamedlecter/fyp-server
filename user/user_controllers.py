@@ -13,8 +13,8 @@ def register_user():
     password = request.json.get('password')
     email = request.json.get('email')
 
-    if not username or not password:
-        return jsonify({'error': 'Username and password are required'}), 400
+    if not email or not password:
+        return jsonify({'error': 'email and password are required'}), 400
 
     existing_user = db.db.users.find_one({'email': email})
     if existing_user:
@@ -23,7 +23,7 @@ def register_user():
     new_user = User(username, password, email)
     db.db.users.insert_one({'username': new_user.username, 'password': new_user.password, 'email': new_user.email})
 
-    return jsonify({'message': 'Registration successful', }), 201
+    return jsonify({'message': 'Registration successful'}), 201
 
 
 def login_user():
